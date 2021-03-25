@@ -107,6 +107,48 @@ main button{
     margin-left: 15px;
 }
 
+.playlist h5{
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#crea img{
+    width: 15%;
+    margin-left: 0;
+}
+
+.playlist h5,.playlist ul li{
+    margin-left: 15px;
+}
+
+.side-bot{
+    margin-top: 140px;
+}
+
+.side-bot hr {
+    width: 80%;
+    margin: 5px;
+    margin-left: 15px;
+    border: 1px solid grey;
+}
+
+.side-bot img{
+    margin-right: 10px;
+}
+
+#profile{
+    font-size: 15px;
+    color: white;
+}
+
+#profile img{
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
 .main-content{
     display: flex;
     flex-grow: 1;
