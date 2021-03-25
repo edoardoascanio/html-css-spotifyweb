@@ -10,31 +10,6 @@ body{
     flex-direction: column;
 }
 
-.display-flex{
-    display: flex;
-}
-
-.toolbar nav{
-    display: flex;
-    background-color:#2e2e2e;
-    color: white;
-    height: 80px;
-    justify-content: space-between;
-
-}
-
-.toolbar nav ul{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    align-items: center;
-}
-
-.toolbar ul li{
-    padding:15px 10px;
-}
-
 main{
     display: flex;
     width: 100%
@@ -50,6 +25,8 @@ main{
 }
 
 .headbar{
+    display: flex;
+    flex-direction: row-reverse;
     padding: 20px 5px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -151,25 +128,80 @@ main button{
 
 .main-content{
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     align-items: center;
 }
 
+.main-content ul li {
+    display: inline-block;
+    margin: 10px;
+    color: grey;
+}
+
+.main-content ul li a{
+    color: grey;
+}
+
+#evidenza{
+    border-bottom: 3px solid greenyellow;
+}
+
 .user-container{
     flex-grow: 1;
-    padding: 10px;
+    padding:0 20px;
     align-self: stretch;
     display: flex;
     flex-wrap: wrap;
 }
 
+h2{
+    font-weight: 600;
+}
+
 .album{
     flex-basis: calc(100%/5);
     flex-grow: 1;
-    padding: 10px;
+    padding: 10px;   
 }
 
 .album img{
     width: 100%;
+}
+
+.toolbar nav{
+    display: flex;
+    background-color:#2e2e2e;
+    color: white;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.toolbar nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.toolbar ul li{
+    padding: 15px;
+}
+
+.toolbar img{
+    width: 12%;
+    
+}
+
+.text-brano{
+    display: inline-block;
+    line-height: 0px;
+    vertical-align: top;
+}
+
+.text-brano a{
+    font-size: 10px;
+    color: gray;
 }
 
