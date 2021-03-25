@@ -174,7 +174,7 @@ h2{
     background-color:#2e2e2e;
     color: white;
     height: 80px;
-    justify-content: space-between;
+    
 }
 
 .toolbar nav ul{
@@ -189,7 +189,7 @@ h2{
     padding: 15px;
 }
 
-.toolbar img{
+.toolbar-left img{
     width: 12%;
     
 }
@@ -203,5 +203,13 @@ h2{
 .text-brano a{
     font-size: 10px;
     color: gray;
+}
+
+.left-icon{
+    display: inline-block;
+}
+
+.left-icon img{
+    width: 5%;
 }
 
