@@ -184,6 +184,7 @@ h2,h5{
 
 .toolbar nav{
     display: flex;
+    align-items: space-between;
     background-color:#2e2e2e;
     color: white;
     height: 80px;
@@ -192,6 +193,7 @@ h2,h5{
 
 .toolbar nav ul{
     display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -203,7 +205,7 @@ h2,h5{
 }
 
 .toolbar-left img{
-    width: 10%;
+    width: 12%;
     
 }
 
@@ -229,3 +231,89 @@ h2,h5{
     color: grey;
 }
 
+.toolbar-center{
+    color: lightgrey;
+    width: 50%;
+}
+
+.toolbar-center .player{
+    width: 100%;
+    text-align: center;
+    line-height: 0px;
+    display: block;
+}
+
+.toolbar-center i{
+    font-size: 18px;
+    margin:0 10px;
+}
+
+#play{
+    font-size: 35px;
+    margin: 10px 20px -10px 20px;
+    vertical-align: sub;
+}
+
+.play-bar{
+    color:lightgrey;  
+}
+
+.play-bar span{
+    display: inline-block;
+    margin: 20px;
+    font-size: 12px;
+}
+
+.play-bar i:hover{
+    display: inline-block;
+    color: white;
+    margin: 0px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.play-bar i{
+    display: none;
+    color: transparent;
+    margin: 0px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.line-a{
+    display: inline-block;
+    width: 10%;
+    height: 3px;
+    margin-right: 0px;
+    background-color:lightgrey;
+    border:1px solid lightgrey;
+    border-radius: 50px;
+}
+
+.line-b{
+    display: inline-block;
+    width: 45%;
+    height: 3px;
+    margin-left: 0px;
+    background-color: grey;
+    border:1px solid grey;
+    border-radius: 50px;
+}
+
+.toolbar-right{
+    display: flex;
+    justify-content: flex-end;
+    color: lightgrey;
+    width: 25%;
+}
+
+.toolbar-right i{
+    margin:10px;
+    vertical-align: top;
+}
+
+.right-bar{
+    width: 100%;
+    margin-left: 10px;
+    vertical-align: middle;
+}
