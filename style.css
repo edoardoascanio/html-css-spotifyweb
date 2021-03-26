@@ -190,7 +190,7 @@ h2{
 }
 
 .toolbar-left img{
-    width: 12%;
+    width: 10%;
     
 }
 
@@ -207,9 +207,12 @@ h2{
 
 .left-icon{
     display: inline-block;
+    margin-left: 30px;
+    vertical-align: middle;
 }
 
-.left-icon img{
-    width: 5%;
+.left-icon a{
+    display: block;
+    color: grey;
 }
 
