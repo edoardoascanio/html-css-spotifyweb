@@ -100,6 +100,7 @@ main button{
 }
 
 .side-bot{
+    display: fixed;
     margin-top: 140px;
 }
 
@@ -136,6 +137,7 @@ main{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    overflow: auto;
     align-items: center;
 }
 
@@ -163,7 +165,18 @@ main{
     flex-wrap: wrap;
 }
 
-h2,h5{
+.title{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+h5{
     font-weight: 600;
 }
 
@@ -177,7 +190,11 @@ h2,h5{
     width: 100%;
 }
 
-.album a{
+.album-circle img{
+    border-radius: 50%;
+}
+
+.user-container a{
     font-size: 12px;
     color: grey;
 }
