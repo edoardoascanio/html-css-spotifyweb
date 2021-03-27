@@ -204,17 +204,46 @@ h5{
 
 .album{
     flex-basis: calc(100%/6);
-    padding: 10px;   
+    padding: 10px;  
+    position:relative; 
 }
 
 .album img{
-    position:relative;
     flex-grow: 1;
     width: 100%;
 }
 
-.overlay{
-    background-color: gray;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.album:hover .overlay {
+    opacity: 1;
+} 
+
+.album-icon i{
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 500;
+}
+
+.fa-play-circle-o:hover {
+    color: #eee;
 }
 
 .album-circle img{
