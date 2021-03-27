@@ -36,8 +36,13 @@ main button{
     border-radius: 20px;
     background-color: transparent;
     color:white;
-    padding:10px 30px 10px 30px;
+    padding:10px 35px 10px 35px;
     font-size: 10px;
+}
+
+main button:hover{
+    padding:10px 36px 10px 36px;
+    font-size: 11px;
 }
 
 .sidebar{
@@ -76,6 +81,11 @@ main button{
 .sidebar li a{
     font-size: 12px;
     color: grey;
+}
+
+ul li a:hover{
+    color:white;
+    text-decoration: none;
 }
 
 .sidebar span img{
@@ -127,6 +137,15 @@ main button{
     border-radius: 50%;
 }
 
+a:hover{
+    color: white;
+    text-decoration: none; 
+}
+
+ul i:hover{
+    color: white;
+}
+
 main{
     display: flex;
     flex-direction: row;
@@ -144,11 +163,14 @@ main{
 .main-content ul li {
     display: inline-block;
     margin: 10px;
-    color: grey;
 }
 
 .main-content ul li a{
     color: grey;
+}
+
+.main-content ul li a:hover{
+    color: white;
 }
 
 #evidenza{
@@ -186,8 +208,14 @@ h5{
 }
 
 .album img{
+    position:relative;
     flex-grow: 1;
     width: 100%;
+}
+
+.overlay{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .album-circle img{
@@ -199,9 +227,13 @@ h5{
     color: grey;
 }
 
+.user-container a:hover{
+    color: white;
+}
+
 .toolbar nav{
     display: flex;
-    align-items: space-between;
+    align-items: center;
     background-color:#2e2e2e;
     color: white;
     height: 80px;
@@ -209,8 +241,6 @@ h5{
 }
 
 .toolbar nav ul{
-    display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -218,7 +248,7 @@ h5{
 }
 
 .toolbar ul li{
-    padding: 15px;
+    padding-left: 15px;
 }
 
 .toolbar-left img{
@@ -271,6 +301,11 @@ h5{
     vertical-align: sub;
 }
 
+#play:hover{
+    font-size: 36px;
+    margin: 9px 20px -5px 20px;
+}
+
 .play-bar{
     color:lightgrey;  
 }
@@ -299,7 +334,7 @@ h5{
 
 .line-a{
     display: inline-block;
-    width: 10%;
+    width: 15%;
     height: 3px;
     margin-right: 0px;
     background-color:lightgrey;
@@ -307,11 +342,16 @@ h5{
     border-radius: 50px;
 }
 
+.line-a:hover{
+    background-color:greenyellow;
+    border:1px solid greenyellow;
+}
+
 .line-b{
     display: inline-block;
-    width: 45%;
+    width: 40%;
     height: 3px;
-    margin-left: 0px;
+    border-left: 0;
     background-color: grey;
     border:1px solid grey;
     border-radius: 50px;
@@ -319,13 +359,12 @@ h5{
 
 .toolbar-right{
     display: flex;
-    justify-content: flex-end;
     color: lightgrey;
     width: 25%;
 }
 
 .toolbar-right i{
-    margin:10px;
+    margin: 10px;
     vertical-align: top;
 }
 
