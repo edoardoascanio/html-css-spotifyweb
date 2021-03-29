@@ -406,3 +406,69 @@ h5{
     width: 100%;
     margin-left: 2px;
 }
+
+@media all and (max-width: 767px){
+    .album{
+        flex-basis: calc(100%/2);
+        padding: 10px;  
+    }
+
+    .toolbar-center{
+        padding: 0;
+    }
+
+    .toolbar-center .player{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        line-height: 0px;
+    }
+
+    .toolbar-right{
+        display: flex;
+        color: lightgrey;
+        width: 45%;
+    }
+
+    .toolbar-center i{
+        font-size: 10px;
+        margin:0 5px;
+        color: grey;
+    }
+
+    #play{
+        font-size: 18px;
+        margin: 5px 10px 5px 10px;
+        vertical-align: sub;
+        color: lightgray;
+    }
+
+    .play-bar span{
+        display: inline-block;
+        margin: 5px;
+        font-size: 8px;
+    }
+
+    .line-a{
+        width: 10%;
+    }
+
+    .toolbar-right i{
+        font-size: 10px;
+        margin: 5px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    .album{
+        flex-basis: calc(100%/4);
+        padding: 10px;  
+    }
+
+    .toolbar-right{
+        display: flex;
+        color: lightgrey;
+        width: 45%;
+    }
+
+}    
