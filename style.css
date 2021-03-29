@@ -413,38 +413,22 @@ h5{
         padding: 10px;  
     }
 
-    .toolbar-center{
-        padding: 0;
-    }
-
-    .toolbar-center .player{
-        width: 60%;
-        margin: auto;
-        text-align: center;
-        line-height: 0px;
-    }
-
     .toolbar-right{
-        display: flex;
-        color: lightgrey;
         width: 45%;
     }
 
     .toolbar-center i{
         font-size: 10px;
         margin:0 5px;
-        color: grey;
     }
 
     #play{
         font-size: 18px;
         margin: 5px 10px 5px 10px;
-        vertical-align: sub;
-        color: lightgray;
+        vertical-align: middle;
     }
 
     .play-bar span{
-        display: inline-block;
         margin: 5px;
         font-size: 8px;
     }
@@ -457,6 +441,14 @@ h5{
         font-size: 10px;
         margin: 5px;
     }
+
+    .text-brano h5{
+        font-size: 12px;
+    }
+
+    .left-icon{
+        margin-left: 12px;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 991px){
@@ -466,8 +458,6 @@ h5{
     }
 
     .toolbar-right{
-        display: flex;
-        color: lightgrey;
         width: 45%;
     }
 
