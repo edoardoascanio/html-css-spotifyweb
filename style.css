@@ -99,6 +99,11 @@ ul li a:hover{
     margin-left: 15px;
 }
 
+.playlist{
+    height: 100%;
+    overflow: auto;
+}
+
 .playlist h5{
     color: white;
     font-weight: 600;
@@ -112,11 +117,6 @@ ul li a:hover{
 
 .playlist h5,.playlist ul li{
     margin-left: 15px;
-}
-
-.side-bot{
-    display: fixed;
-    margin-top: 140px;
 }
 
 .side-bot hr {
@@ -372,17 +372,32 @@ h5{
 
 .line-a{
     display: inline-block;
-    width: 15%;
+    width: 25%;
     height: 3px;
     margin-right: 0px;
     background-color:lightgrey;
     border:1px solid lightgrey;
     border-radius: 50px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
 }
 
 .line-a:hover{
     background-color:greenyellow;
     border:1px solid greenyellow;
+}
+
+#line-button{
+    position: absolute;
+    left: 70px;
+    bottom: -6px;
+    color: transparent;
+    font-size: 14px;
+}
+
+#line-button:hover{
+    color: white;
 }
 
 .line-b{
@@ -393,6 +408,7 @@ h5{
     background-color: grey;
     border:1px solid grey;
     border-radius: 50px;
+    position: relative;
 }
 
 .toolbar-right{
